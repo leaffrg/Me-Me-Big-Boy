@@ -3,13 +3,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<div ng-app="">
-  <p>Name: <input type="text" ng-model="name"></p>
-  <p ng-bind="name"></p>
-<img src="C:\Git Tarefa\Imagens\tomato.jpg" alt="Tomato" width=220 height=220>
-<p>{{name}} is gay</p>
-</div>
+<div ng-app="" ng-init="quantity=1;price=5">
 
+  <p>Name: <input type="text" ng-model="name"></p>
+
+  <p ng-bind="name"></p>
+
+<img src="C:\Git Tarefa\Imagens\tomato.jpg" alt="Tomato" width=220 height=220>
+
+<p>{{name}} just got pranked</p>
+
+
+people: <input type="number" ng-model="quantity">
+	
+prayers per people:    <input type="number" ng-model="price">
+
+total of prayers: {{ quantity * price }}
+
+</div>
 	
 </body>
 </html>﻿
